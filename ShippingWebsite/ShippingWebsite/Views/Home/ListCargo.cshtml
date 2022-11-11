@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ShippingWebsite.Models.CargoModel>
+
+@{
+    ViewData["Title"] = "Cargo List";
+}
+<div class="text-center">
+    <h1 class="display-4">Hammam Shipping Project</h1>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Code)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var update in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => update.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(model => update.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => update.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(model => update.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(model => update.Description)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "UpdateCargo", new { Code = update.Code, Name = update.Name, Quantity = update.Quantity, Status = update.Status, Description = update.Description }, htmlAttributes: null)
+            </td>
+            <td>
+                @Html.ActionLink("Delete", "DeleteCargo", new { Code = update.Code, Name = update.Name, Quantity = update.Quantity, Status = update.Status, Description = update.Description }, htmlAttributes: null)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

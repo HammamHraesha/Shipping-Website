@@ -1,0 +1,11 @@
+C:\Users\hhraesha\source\repos\ShippingWebsite\ShippingWebsite\bin\Debug\netcoreapp2.0\ShippingWebsite.deps.json
+C:\Users\hhraesha\source\repos\ShippingWebsite\ShippingWebsite\bin\Debug\netcoreapp2.0\ShippingWebsite.runtimeconfig.json
+C:\Users\hhraesha\source\repos\ShippingWebsite\ShippingWebsite\bin\Debug\netcoreapp2.0\ShippingWebsite.runtimeconfig.dev.json
+C:\Users\hhraesha\source\repos\ShippingWebsite\ShippingWebsite\bin\Debug\netcoreapp2.0\ShippingWebsite.dll
+C:\Users\hhraesha\source\repos\ShippingWebsite\ShippingWebsite\bin\Debug\netcoreapp2.0\ShippingWebsite.pdb
+C:\Users\hhraesha\source\repos\ShippingWebsite\ShippingWebsite\obj\Debug\netcoreapp2.0\ShippingWebsite.csproj.CoreCompileInputs.cache
+C:\Users\hhraesha\source\repos\ShippingWebsite\ShippingWebsite\obj\Debug\netcoreapp2.0\ShippingWebsite.AssemblyInfoInputs.cache
+C:\Users\hhraesha\source\repos\ShippingWebsite\ShippingWebsite\obj\Debug\netcoreapp2.0\ShippingWebsite.AssemblyInfo.cs
+C:\Users\hhraesha\source\repos\ShippingWebsite\ShippingWebsite\obj\Debug\netcoreapp2.0\ShippingWebsite.dll
+C:\Users\hhraesha\source\repos\ShippingWebsite\ShippingWebsite\obj\Debug\netcoreapp2.0\ShippingWebsite.pdb
+C:\Users\hhraesha\source\repos\ShippingWebsite\ShippingWebsite\obj\Debug\netcoreapp2.0\ShippingWebsite.csprojAssemblyReference.cache

@@ -1,0 +1,49 @@
+﻿@model ShippingWebsite.Models.CargoModel
+
+@{
+    ViewData["Title"] = "Create New Cargo";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Add New Cargo</h1>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.Code)
+
+    <div class="form-group">
+
+
+        @Html.LabelFor(model => model.Name, "Name", htmlAttributes: new { @class = "control-label col-sm-2" })
+        <div class="col-sm-4">
+            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", placeholder = "Cargo Name", required = "required" } })
+        </div>
+
+        @Html.LabelFor(model => model.Quantity, "Quantity", htmlAttributes: new { @class = "control-label col-sm-2" })
+        <div class="col-sm-4">
+            @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control", placeholder = "Quantity", required = "required" } })
+        </div>
+
+        @Html.LabelFor(model => model.Status, "Status", htmlAttributes: new { @class = "control-label col-sm-2" })
+        <div class="col-sm-4">
+            @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @class = "form-control", placeholder = "Status", required = "required" } })
+        </div>
+
+        @Html.LabelFor(model => model.Description, "Description", htmlAttributes: new { @class = "control-label col-sm-2" })
+        <div class="col-sm-4">
+            @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control", placeholder = "Description", required = "required" } })
+        </div>
+
+    </div>
+
+    <div class="form-group row">
+        <div class="col-md-offset-2 col-md-4">
+            <br />
+            <input type="submit" id="saveBtnId" value="save" class="btn btn-primary" />
+        </div>
+    </div>
+}
